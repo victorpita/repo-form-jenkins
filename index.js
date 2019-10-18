@@ -6,8 +6,9 @@ app.get('/', (req, res) => res.json({ ok: true }))
 
 app.get('/notok', (req, res) => res.json({ ok: false }))
 app.get('/username', (req, res) => res.json({ username: process.env.USERNAME,
-    usersname:process.env.password_USR,
-    usersname:process.env.password_PSW
+    usernamepassword:process.env.password,
+    username:process.env.password_USR,
+    password:process.env.password_PSW
 }))
 
 
